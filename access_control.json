@@ -1,8 +1,20 @@
 {
-  "enabled": false,
-  "require_ip_whitelist": false,
+  "enabled": true,
+  "require_ip_whitelist": true,
   "allow_access_code_login": true,
   "admin_pin": "123456",
-  "contact_message": "Bạn chưa được cấp quyền truy cập trang Web Quiz này. Vui lòng gửi Địa chỉ IP hoặc Mã thiết bị bên dưới cho Admin để được mở quyền!",
-  "users": []
+  "admin_ips": "42.117.87.73",
+  "contact_message": "Bạn chưa được cấp quyền truy cập trang Web Quiz này. Vui lòng bấm Copy Địa chỉ IP bên dưới và gửi cho Admin để được mở quyền môn học!",
+  "users": [
+    {
+      "name": "Chủ Web (Admin)",
+      "ip": "42.117.87.73",
+      "access_code": "",
+      "allowed_subjects": [
+        "ALL"
+      ],
+      "is_admin": true,
+      "enabled": true
+    }
+  ]
 }
