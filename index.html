@@ -1687,10 +1687,10 @@ function renderCurrentQuestion() {
         <span class="subj-tag">📘 ${q.subject || 'Chung'}</span>
         <span class="topic-tag" onclick="selectTopic('${(q.topic || '').replace(/'/g, "\\'")}')" title="Bấm để lọc toàn bộ câu hỏi cùng nhóm kiến thức này">🧠 ${q.topic || 'Tổng hợp'} (${sameTopicCount} câu)</span>
       </div>
-      ${isCurrentUserAdmin() ? `<div style="display:flex;gap:8px;align-items:center;">
+      <div style="display:flex;gap:8px;align-items:center;">
         <span class="kbd-hint">Sửa đáp án (VD: C hoặc ADE):</span>
         <input class="edit-ans-input" value="${q.answers.join('')}" onchange="overrideAnswer(${q.id}, this.value)">
-      </div>` : ''}
+      </div>
     </div>
     ${multiHintHtml}
     <div class="q-text">${q.question || "(Xem nội dung câu hỏi trên ảnh Slide bên dưới)"}</div>
