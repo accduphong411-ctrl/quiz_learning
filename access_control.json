@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "require_ip_whitelist": false,
+  "allow_access_code_login": true,
+  "admin_pin": "123456",
+  "contact_message": "Bạn chưa được cấp quyền truy cập trang Web Quiz này. Vui lòng gửi Địa chỉ IP hoặc Mã thiết bị bên dưới cho Admin để được mở quyền!",
+  "users": []
+}
