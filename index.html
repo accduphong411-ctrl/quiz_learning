@@ -1699,7 +1699,7 @@ function renderCurrentQuestion() {
     ${feedbackHtml}
     <div class="nav-footer">
       <button class="btn" onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>⬅ Câu trước (←)</button>
-      <span class="kbd-hint">Phím tắt: Bấm <b>1-6</b> hoặc <b>A-F</b> để chọn, <b>Space / →</b> sang câu tiếp</span>
+      <span class="kbd-hint">Phím tắt: Bấm <b>1-6</b> để chọn đáp án, <b>Space / →</b> sang câu tiếp</span>
       <button class="btn btn-primary" onclick="nextQuestion()" ${currentIndex===activePool.length-1?'disabled':''}>Câu tiếp theo (→) ➡</button>
     </div>
   `;
@@ -1865,7 +1865,7 @@ document.addEventListener("keydown", (e) => {
   const q = activePool[currentIndex];
   if (!q) return;
 
-  const keyMap = { "1": "A", "2": "B", "3": "C", "4": "D", "5": "E", "6": "F", "A": "A", "B": "B", "C": "C", "D": "D", "E": "E", "F": "F" };
+  const keyMap = { "1": "A", "2": "B", "3": "C", "4": "D", "5": "E", "6": "F" };
   if (keyMap[key]) {
     e.preventDefault();
     selectOption(q.id, keyMap[key]);
