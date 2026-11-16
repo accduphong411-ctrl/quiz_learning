@@ -1,20 +1,26 @@
 {
-  "enabled": true,
-  "require_ip_whitelist": true,
-  "allow_access_code_login": true,
-  "admin_pin": "123456",
-  "admin_ips": "42.117.87.73",
-  "contact_message": "Bạn chưa được cấp quyền truy cập trang Web Quiz này. Vui lòng bấm Copy Địa chỉ IP bên dưới và gửi cho Admin để được mở quyền môn học!",
-  "users": [
-    {
-      "name": "Chủ Web (Admin)",
-      "ip": "42.117.87.73",
-      "access_code": "",
-      "allowed_subjects": [
-        "ALL"
-      ],
-      "is_admin": true,
-      "enabled": true
-    }
-  ]
+  "gate_enabled": true,
+  "admin_code": "ADMIN123",
+  "user_code": "USER123",
+  "allowed_subjects": [
+    "ALL"
+  ],
+  "blocked_ips": [],
+  "ip_names": {
+    "42.117.87.73": "Máy của tôi (Admin)"
+  },
+  "ip_subjects": {},
+  "user_ui": {
+    "site_title": "🎓 Hệ Thống Ôn Thi Trắc Nghiệm Đa Môn",
+    "announcement": "",
+    "show_topic_bar": true,
+    "show_topics_tab": true,
+    "show_wrong_tab": true,
+    "show_list_tab": true,
+    "show_shuffle_btn": true,
+    "show_slide_toggle": true,
+    "show_explanation": true
+  },
+  "access_logs": {},
+  "cloud_sync_url": "https://api.restful-api.dev/objects/ff808181a09d98f701a1e2f296953614"
 }
